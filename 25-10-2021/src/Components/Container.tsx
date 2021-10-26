@@ -32,21 +32,18 @@ const Container = () => {
             setCurrentPage(newNum)
             setNewNumPagination(newNum)
             setLoading(false)
+            newNum+=1
         }
         fetchData()
         const a = setInterval(()=>{
-            newNum+=1
             fetchData()
-            if(newNum>49){
+            if(newNum>48){
                 clearInterval(a)
             }
         },10000)
     },[])
     const paginate = (pageNumber:number) => {
         setCurrentPage(pageNumber-1)
-    }
-    const clearData = ()=>{
-        newNum=0
     }
     return (
         <div>
