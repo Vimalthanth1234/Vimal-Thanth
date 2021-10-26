@@ -1,11 +1,6 @@
 import { useSelector } from 'react-redux'
 import Button from '@mui/material/Button';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
 type stateType = {
     getDataReducer:any,
     JSONReducer:any

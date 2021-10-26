@@ -10,6 +10,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import PaginationCompo from './PaginationCompo'
 import TableContent from './TableContent'
+import searchAction from '../redux/actions/searchAction'
+import Input from '@mui/material/Input';
+
 type stateType = {
     getDataReducer:any,
     JSONReducer:any
@@ -45,11 +48,9 @@ const Container = () => {
     const paginate = (pageNumber:number) => {
         setCurrentPage(pageNumber-1)
     }
-    const clearData = ()=>{
-        newNum=0
-    }
     return (
         <div>
+            <p style={{textAlign:'center'}}><Input  type='text' placeholder='Search by Title and Created_At' style={{textAlign:'center',width:'40%'}} onChange={(event)=>{dispatch(searchAction(event.target.value))}}/></p>
             <Table>
                 <TableHead>
                     <TableRow>

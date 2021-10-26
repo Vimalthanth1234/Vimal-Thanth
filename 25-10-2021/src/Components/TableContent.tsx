@@ -26,9 +26,9 @@ const TableContent = (props: tableContentProps) => {
     }
     return (
         <>
-            {myData[pageNumber] && newArr.map((ele: string) => {
+            {myData[pageNumber] && newArr.map((ele: string,index:number) => {
                 return (
-                    <TableRow>
+                    <TableRow key={index}>
                         <TableCell align="right">{myData[pageNumber][ele].title}</TableCell>
                         <TableCell align="right">{myData[pageNumber][ele].url}</TableCell>
                         <TableCell align="right">{myData[pageNumber][ele].created_at}</TableCell>
