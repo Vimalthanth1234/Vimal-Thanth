@@ -12,10 +12,9 @@ const JsonData = () => {
     const dispatch = useDispatch()
     const myState = useSelector((state:stateType)=>{
         return state})
-    // console.log(myState.modalReducer)
     return (
         <Modal isOpen={myState.modalReducer} onRequestClose={()=>dispatch(modal(false))}>
-            {JSON.stringify(myState.JSONReducer)}
+            {JSON.stringify(myState.JSONReducer)}<br />
             <Button variant="contained" style={{color:'white',textDecoration:'none'}} onClick={()=>{dispatch(modal(false))}}>Back to Home</Button>
         </Modal>
     )
