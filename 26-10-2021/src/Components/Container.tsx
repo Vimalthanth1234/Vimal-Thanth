@@ -35,10 +35,10 @@ const Container = () => {
             setCurrentPage(newNum)
             setNewNumPagination(newNum)
             setLoading(false)
+            newNum+=1
         }
         fetchData()
         const a = setInterval(()=>{
-            newNum+=1
             fetchData()
             if(newNum>49){
                 clearInterval(a)
