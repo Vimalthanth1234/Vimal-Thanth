@@ -45,5 +45,4 @@ const TableContent = (props: tableContentProps) => {
         </>
     )
 }
-
 export default TableContent
