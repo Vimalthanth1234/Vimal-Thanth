@@ -48,12 +48,6 @@ const TableContent = (props: tableContentProps) => {
                                                 created_at:myData[pageNumber][ele].created_at,
                                                 author:myData[pageNumber][ele].author}))
                                                 }}>Show</Button></TableCell>
-                            {/* <TableCell align="right"><Router><Button variant="contained"><Link style={{color:'white',textDecoration:'none'}} to='/JSON' onClick={()=>{
-                                dispatch(getJSON({title:myData[pageNumber][ele].title,
-                                                url:myData[pageNumber][ele].url,
-                                                created_at:myData[pageNumber][ele].created_at,
-                                                author:myData[pageNumber][ele].author}))
-                                                history.push('/JSON')}}>Show</Link></Button></Router></TableCell> */}
                         </TableRow> 
                     )
 
