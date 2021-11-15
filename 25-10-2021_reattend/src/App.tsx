@@ -6,8 +6,7 @@ import JsonData from './components/JsonData'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 const App = () => {
   return (

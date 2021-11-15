@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component tests Render correctly initial document 1`] = `
+<div>
+  <div
+    style="box-shadow: 5px 10px #888888; padding: 50px;"
+  >
+    <h1
+      style="color: blue; text-align: center; box-shadow: 5px 10px #888888; padding: 10px;"
+    >
+      Result
+    </h1>
+    <div
+      style="display: flex; flex-direction: row;"
+    >
+      <div>
+        <svg
+          height="100%"
+          style="display: block;"
+          viewBox="0 0 100 100"
+          width="100%"
+        >
+          <path
+            d=""
+            fill="none"
+            stroke="green"
+            stroke-width="50"
+          >
+            <title>
+              Right
+            </title>
+          </path>
+          <path
+            d="M 75 50 A 25 25 0 1 1 74.99999999619229 49.99956366768703"
+            fill="none"
+            stroke="red"
+            stroke-width="50"
+          >
+            <title>
+              Wrong
+            </title>
+          </path>
+        </svg>
+      </div>
+      <div
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px;"
+      >
+        <p
+          style="color: green; text-align: center;"
+        >
+          True Answers :- 
+          0
+        </p>
+        <p
+          style="color: red; text-align: center;"
+        >
+          False Answers :- 
+          5
+        </p>
+        <p
+          style="text-align: center;"
+        >
+          Percentage :- 
+          0
+          %
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

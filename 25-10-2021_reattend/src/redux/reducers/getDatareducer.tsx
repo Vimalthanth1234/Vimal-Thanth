@@ -1,4 +1,3 @@
-import React from 'react'
 const initial:any = []
 type Action = {
     type:string,

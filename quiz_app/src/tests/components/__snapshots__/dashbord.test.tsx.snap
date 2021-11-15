@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component tests Render correctly initial document 1`] = `
+<div>
+  <div
+    style="box-shadow: 5px 10px #888888; padding: 50px;"
+  >
+    <h1
+      style="text-align: center; box-shadow: 5px 10px #888888; padding: 10px;"
+    >
+      <span
+        style="color: purple;"
+      >
+        Q
+      </span>
+      UI
+      <span
+        style="color: blue;"
+      >
+        Z
+      </span>
+    </h1>
+    <div>
+      <ul>
+        <button
+          class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          style="background-color: gray; color: white; border-radius: 40px; margin: 10px; box-shadow: 5px 10px #888888;"
+          tabindex="0"
+          type="button"
+        >
+          1
+        </button>
+        <button
+          class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          style="background-color: gray; color: white; border-radius: 40px; margin: 10px; box-shadow: 5px 10px #888888;"
+          tabindex="0"
+          type="button"
+        >
+          2
+        </button>
+        <button
+          class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          style="background-color: gray; color: white; border-radius: 40px; margin: 10px; box-shadow: 5px 10px #888888;"
+          tabindex="0"
+          type="button"
+        >
+          3
+        </button>
+        <button
+          class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          style="background-color: gray; color: white; border-radius: 40px; margin: 10px; box-shadow: 5px 10px #888888;"
+          tabindex="0"
+          type="button"
+        >
+          4
+        </button>
+        <button
+          class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          style="background-color: gray; color: white; border-radius: 40px; margin: 10px; box-shadow: 5px 10px #888888;"
+          tabindex="0"
+          type="button"
+        >
+          5
+        </button>
+      </ul>
+    </div>
+    <h3>
+      Ques No :- 
+      1
+    </h3>
+    <h4>
+       
+      2+2=___
+    </h4>
+    <ul>
+      <li>
+        <input
+          name="options1"
+          type="radio"
+        />
+        1
+      </li>
+      <li>
+        <input
+          name="options1"
+          type="radio"
+        />
+        2
+      </li>
+      <li>
+        <input
+          name="options1"
+          type="radio"
+        />
+        3
+      </li>
+      <li>
+        <input
+          name="options1"
+          type="radio"
+        />
+        4
+      </li>
+    </ul>
+    <button
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root Mui-disabled  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      disabled=""
+      style="background-color: blue; color: white;"
+      tabindex="-1"
+      type="button"
+    >
+      Previous
+    </button>
+    <button
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      style="background-color: purple; color: white;"
+      tabindex="0"
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

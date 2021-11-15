@@ -7,13 +7,18 @@ import getData from '../redux/actions/getData'
 import Pagination from './Pagination'
 import { useHistory } from 'react-router'
 import getJSON from '../redux/actions/getJSON'
-// import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
+import Button from '@mui/material/Button'
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 type stateType = {
     incNumber:number,
@@ -50,24 +55,24 @@ const TableCompo = () => {
     }
     return (
         <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>URL</th>
-                        <th>Created_At</th>
-                        <th>Author</th>
-                        <th>See JSON</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {myState.getDatareducer[pageNumber]&&Object.keys(myState.getDatareducer[0]).map((innerEle:string)=>{
-                            return <tr>
-                                <td>{myState.getDatareducer[pageNumber][innerEle].title}</td>
-                                <td>{myState.getDatareducer[pageNumber][innerEle].url}</td>
-                                <td>{myState.getDatareducer[pageNumber][innerEle].created_at }</td>
-                                <td>{myState.getDatareducer[pageNumber][innerEle].author}</td>
-                                <button onClick={()=>{
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell>Title</TableCell>
+                        <TableCell>URL</TableCell>
+                        <TableCell>Created_At</TableCell>
+                        <TableCell>Author</TableCell>
+                        <TableCell>See JSON</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {myState.getDatareducer[pageNumber]&&Object.keys(myState.getDatareducer[pageNumber]).map((innerEle:string)=>{
+                            return <TableRow>
+                                <TableCell>{myState.getDatareducer[pageNumber][innerEle].title}</TableCell>
+                                <TableCell>{myState.getDatareducer[pageNumber][innerEle].url}</TableCell>
+                                <TableCell>{myState.getDatareducer[pageNumber][innerEle].created_at }</TableCell>
+                                <TableCell>{myState.getDatareducer[pageNumber][innerEle].author}</TableCell>
+                                <Button variant='contained' style={{margin:'10px 0',textDecoration:'none'}} onClick={()=>{
                                     history.push('/JsonData')
                                     dispatch(getJSON({
                                         title:myState.getDatareducer[pageNumber][innerEle].title,
@@ -75,11 +80,11 @@ const TableCompo = () => {
                                         created_at:myState.getDatareducer[pageNumber][innerEle].created_at,
                                         author:myState.getDatareducer[pageNumber][innerEle].author
                                     }))
-                                }}><Router><Link to='/JsonData'>Show</Link></Router></button>
-                            </tr>
+                                }}><Router><Link style={{textDecoration:'none',color:'white'}} to='/JsonData'>Show</Link></Router></Button>
+                            </TableRow>
                         })}
-                </tbody>
-            </table>
+                </TableBody>
+            </Table>
             <Pagination paginate={paginate} page={pageNumber}/>
         </div>
     )
