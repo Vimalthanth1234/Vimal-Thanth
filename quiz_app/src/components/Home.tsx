@@ -19,7 +19,6 @@ const Home = () => {
     const dispatch = useDispatch()
     return (
         <form style={{display:'flex',backgroundColor:'black',margin:'10px',flexDirection:'column',justifyContent:'center',alignItems:'center',boxShadow:'5px 10px #888888',width:'30%'}} onSubmit={()=>{
-            // e.preventDefault()
             dispatch(startHandler(lang))
             navigate('/dashbord')
             

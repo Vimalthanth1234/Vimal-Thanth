@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Router,Link,Routes } from 'react-router-dom'
 import { useSelector,useDispatch } from 'react-redux'
 import quesNumber from '../redux/actions/quesNumber'
 import Button from '@mui/material/Button'

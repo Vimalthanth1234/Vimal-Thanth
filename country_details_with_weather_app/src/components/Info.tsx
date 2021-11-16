@@ -5,20 +5,19 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import modal from '../redux/actions/modal';
+import modal from '../redux/actions/modal'; 
 import axios from 'axios';
 import Weather from './Weather';
 import getWeatherData from '../redux/actions/getWeatherData'
 import { useHistory } from 'react-router';
 import {
   BrowserRouter as Router,
-  Link
+  Link                      
 } from "react-router-dom";
 type stateType = {
     getDataReducer:any
     modalreducer:boolean
     getWeatherDataReducer:any
-
 }
 
 const Info = () => {

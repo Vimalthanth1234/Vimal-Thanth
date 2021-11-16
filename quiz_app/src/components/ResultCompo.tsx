@@ -19,9 +19,6 @@ const ResultCompo = () => {
                 console.log(ele.selectedAns[0])
                 result.push(true)
             }
-            // else{
-            //     result.push(false)
-            // }
         }else{
             const multiArr:any = []
             ele.selectedAns.map((e:string)=>{
